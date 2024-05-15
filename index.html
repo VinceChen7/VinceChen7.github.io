@@ -20,28 +20,34 @@
         p {
             margin: 5px 0;
         }
-        .fixed-bar {
+        .sidebar {
             position: fixed;
             top: 0;
             left: 0;
+            width: 200px; /* 调整侧边栏宽度 */
+            height: 100%; /* 让侧边栏铺满整个页面高度 */
             background-color: #f0f0f0;
-            padding: 10px 20px;
-            z-index: 1000;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto; /* 添加滚动条 */
         }
-        .fixed-bar a {
-            margin-right: 20px;
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
             text-decoration: none;
             color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>陳奕佑 Vince</h1>
-    <div class="fixed-bar">
-        <h4><a href="#personal-info">個人資訊</a></h4><h4><a href="#personal-intro">個人簡介</a></h4><h4><a href="#work-exp">工作經歷</a></h4>
-        <h4><a href="#education">學歷與進修</a></h4><h4><a href="#skills">技能工具</a></h4><h4><a href="#skill-operations">技能操作</a></h4><h4><a href="#language-certification">語⾔與檢定</a></h4><h4><a href="#projects">專案與成果驗收</a></h4>
+    <div class="sidebar">
+        <h4><a href="#personal-info">個人資訊</a></h4>
+        <h4><a href="#personal-intro">個人簡介</a></h4>
+        <h4><a href="#work-exp">工作經歷</a></h4>
+        <h4><a href="#education">學歷與進修</a></h4>
+        <h4><a href="#skills">技能工具</a></h4>
+        <h4><a href="#skill-operations">技能操作</a></h4>
+        <h4><a href="#language-certification">語⾔與檢定</a></h4>
+        <h4><a href="#projects">專案與成果驗收</a></h4>
     </div>
     <div class="section">
         <div id="personal-info"></div>
